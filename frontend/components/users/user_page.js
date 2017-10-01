@@ -63,13 +63,13 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     alignItems: 'center',
-    backgroundColor: '#F5FCFF',
+    backgroundColor: '#fbfaf5',
   },
   input: {
     fontSize: 30,
     top: Dimensions.get('window').height*.15,
     textAlign: 'center',
-    backgroundColor: '#dae7e0',
+    backgroundColor: '#FFF',
     padding: 10,
     borderRadius: 10,
     width: '75%',
