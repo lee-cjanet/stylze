@@ -1,12 +1,12 @@
 import merge from 'lodash/merge';
 
-const currentUserReducer = (state = {}, action) => {
+const currentUserReducer = (state = '', action) => {
   Object.freeze(state);
   switch (action.type) {
     case 'RECEIVE_USER':
-      return merge({}, action.user);
+      return action.user;
     case 'RESET_USER':
-      return merge({})
+      return '';
     default:
       return state;
   }

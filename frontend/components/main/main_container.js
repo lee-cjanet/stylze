@@ -1,5 +1,5 @@
 import { connect } from 'react-redux';
-
+import {receiveUser} from '../../actions/user_actions';
 import Main from './main';
 
 const mapStateToProps = (state) => {
@@ -9,9 +9,7 @@ const mapStateToProps = (state) => {
 };
 
 const mapDispatchToProps = dispatch => ({
-  requestSingleBoard: boardId => dispatch(requestSingleBoard(boardId)),
-  requestAllPins: () => dispatch(requestAllPins()),
-  deleteBoard: (board) => dispatch(deleteBoard(board))
+  receiveUser: user => dispatch(receiveUser(user)),
 });
 
 export default connect(mapStateToProps, mapDispatchToProps)(Main);
