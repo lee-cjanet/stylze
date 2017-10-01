@@ -1,7 +1,6 @@
 import merge from 'lodash/merge';
 
 const currentUserReducer = (state = '', action) => {
-  console.log(action.user);
   Object.freeze(state);
   switch (action.type) {
     case 'RECEIVE_USER':
