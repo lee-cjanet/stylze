@@ -8,7 +8,6 @@ class CreateTops < ActiveRecord::Migration[5.1]
       t.string :tags, array: true, default: []
       t.string :image
       t.string :recommendations, array: true, default: []
-      t.string :image
 
       t.timestamps
     end

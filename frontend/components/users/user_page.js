@@ -35,8 +35,8 @@ class UserPage extends React.Component {
 
         <TextInput placeholder='Search or input SKU' style={styles.input}>
         </TextInput>
-        <Image source={{uri: 'http://res.cloudinary.com/atomc/image/upload/v1506832918/stylez/Stylez-app-seed-pic_0000_Screen-Shot-2017-09-30-at-6.51.17-PM_kegsvw.png'}}
-          style={{width: 500, height: 50}} />
+        <Image source={{uri: '../../assets/Man-Bottoms/Stylez-app-seed-pic_0028_Layer-5.png'}}
+          style={styles.test} />
         <ScrollView
             style={styles.list}
             automaticallyAdjustContentInsets={false}>
@@ -106,6 +106,12 @@ const styles = StyleSheet.create({
   list: {
     top: Dimensions.get('window').height*.15,
   },
+  test: {
+    width: 200,
+    height: 400,
+    top: Dimensions.get('window').height*.35,
+    position: 'absolute',
+  }
 });
 
 export default UserPage;
