@@ -57,5 +57,5 @@ api_recommend GET   /api/recommend(.:format) api/recommends#show
 #### Sample data:
 
 ```ruby
-SEED DATA
+SEED DATA GOES HERE
 ```
