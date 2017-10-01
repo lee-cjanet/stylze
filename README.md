@@ -1,24 +1,61 @@
-# README
+## Stylez
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Developed over a 24-hour period.
 
-Things you may want to cover:
+### Technologies employed:
+* Ruby on Rails
+* PostgreSQL
+* React Native
 
-* Ruby version
+### MVPs:
+* Style options
 
-* System dependencies
+### Future implementations and directions
 
-* Configuration
+* Implement GPS features
+* Google API for recommendations.
+* Swiping.
 
-* Database creation
+#### Sample State:
 
-* Database initialization
+```js
+  {
+    // current user using the ipad
+    currentUser: { 		
+      userId:
+      email:
+      purchaseHistory: [],
+      Passcode: orangeOrange,
+    },
 
-* How to run the test suite
+    // list of users in the ipad aka in the store
+    users: {
+    	orangeOrange: userId,
+      greenApple: userId,
+  	},
 
-* Services (job queues, cache servers, search engines, etc.)
+    currentRecs: {
+    	top: {
+        Name:,
+        Price:,
+        Sku:,
+        Recs/tags: [],
+  		},
 
-* Deployment instructions
+    	bottom: {
+    		Name:,
+    		Price:,
+    		Sku:,
+    		Recs/tags: [],
+  		},
+  	},
+  }
+```
 
-* ...
+### Step by Step process of the proposal:
+
+* CURRENTLY REDACTED
+
+### Implementation:
+
+* TBD
