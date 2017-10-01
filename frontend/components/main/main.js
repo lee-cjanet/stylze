@@ -12,16 +12,29 @@ import {
   FlatList
 } from 'react-native';
 import Dimensions from 'Dimensions';
+import UserPage from '../users/user_page';
 
 class Main extends React.Component {
   constructor(props) {
     super(props);
 
+    this.navigateToUser = this.navigateToUser.bind(this);
 
   }
 
   componentDidMount() {
     // this.props.dispatch(getUsers(this.props.users));
+
+  }
+
+  navigateToUser(user) {
+    // this.props.dispatch(receiveCurrentUser(user));
+
+    this.props.navigator.push({
+        component: UserPage,
+        title: 'User Page',
+        navigationBarHidden: true
+      });
   }
 
 
@@ -30,24 +43,28 @@ class Main extends React.Component {
       <View style={styles.container}>
         <View style={styles.topBar}>
           <Text style={styles.title}>
-            Choose your fruit!
+            Select fruit given!
           </Text>
         </View>
 
-        <FlatList
-          style={styles.list}
-          data={[
-            {key: 'Devin'},
-            {key: 'Jackson'},
-            {key: 'James'},
-            {key: 'Joel'},
-            {key: 'John'},
-            {key: 'Jillian'},
-            {key: 'Jimmy'},
-            {key: 'Julie'},
-          ]}
-          renderItem={({item}) => <Text style={styles.item}>{item.key}</Text>}
-        />
+        <ScrollView
+            style={styles.list}
+            automaticallyAdjustContentInsets={false}>
+            <FlatList
+              data={[
+                {key: 'Blue Strawberry'},
+                {key: 'Yellow Apple'},
+                {key: 'Brown Kiwi'},
+                {key: 'Pink Greggles'},
+                {key: 'Red Starfruit'},
+                {key: 'Orange Orange'},
+                {key: 'Green Watermelon'},
+                {key: 'White Dragonfruit'},
+              ]}
+              renderItem={({item}) => <TouchableOpacity onPress={() => this.navigateToUser(item.key)}><Text style={styles.item}>{item.key}</Text></TouchableOpacity>}
+            />
+          </ScrollView>
+
       </View>
     );
   }
@@ -75,11 +92,11 @@ const styles = StyleSheet.create({
     width: '100%'
   },
   list: {
-    top: Dimensions.get('window').height*.1
+    top: Dimensions.get('window').height*.2
   },
   item: {
    padding: 10,
-   fontSize: 18,
+   fontSize: 20,
    height: 44,
  }
 });

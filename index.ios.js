@@ -8,12 +8,16 @@ import {
   TextInput,
   FlatList
 } from 'react-native';
-import Main from './frontend/components/main';
+import MainNavigator from './frontend/components/main/main_navigator';
+import {Provider, connect} from 'react-redux';
+import {configureStore} from './frontend/store';
 
 export default class Stylez extends Component {
   render() {
     return (
-      <Main></Main>
+      <Provider store={configureStore()}>
+        <MainNavigator/>
+      </Provider>
     );
   }
 }
