@@ -67,7 +67,7 @@ const styles = StyleSheet.create({
   },
   input: {
     fontSize: 30,
-    top: Dimensions.get('window').height*.1,
+    top: Dimensions.get('window').height*.15,
     textAlign: 'center',
     backgroundColor: '#dae7e0',
     padding: 10,
@@ -83,7 +83,7 @@ const styles = StyleSheet.create({
   greeting: {
     alignSelf: 'center',
     alignItems: 'center',
-    top: Dimensions.get('window').height*.04,
+    top: Dimensions.get('window').height*.01,
     fontSize: 35
   },
   item: {
@@ -98,7 +98,7 @@ const styles = StyleSheet.create({
   topBar: {
     position: 'absolute',
     zIndex: 1,
-    height: Dimensions.get('window').height*.125,
+    height: Dimensions.get('window').height*.155,
     left: 0,
     top: 0,
     width: '100%',
