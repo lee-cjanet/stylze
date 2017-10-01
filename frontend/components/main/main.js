@@ -78,7 +78,7 @@ const styles = StyleSheet.create({
     alignItems: 'center'
   },
   title: {
-    top: Dimensions.get('window').height*.04,
+    top: Dimensions.get('window').height*.1,
     color: '#606162',
     fontSize: 28,
     alignSelf: 'center'
@@ -86,7 +86,7 @@ const styles = StyleSheet.create({
   topBar: {
     position: 'absolute',
     zIndex: 1,
-    height: Dimensions.get('window').height*.1,
+    height: Dimensions.get('window').height*.15,
     left: 0,
     top: 0,
     width: '100%'
@@ -95,10 +95,14 @@ const styles = StyleSheet.create({
     top: Dimensions.get('window').height*.2
   },
   item: {
-   padding: 10,
-   fontSize: 20,
-   height: 44,
- }
+    fontSize: 20,
+    height: 44,
+    textAlign: 'center',
+    backgroundColor: '#dae7e0',
+    margin: 10,
+    padding: 10,
+    borderRadius: 10,
+  },
 });
 
 export default Main;
