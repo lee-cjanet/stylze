@@ -29,6 +29,7 @@ class UserPage extends React.Component {
           <TouchableOpacity onPress={this.handleBack} style={styles.back}>
             <Icon name="chevron-left" size={30} color='#12512d'/>
           </TouchableOpacity>
+          <Text style={styles.greeting}>Hi, {this.props.currentUser}!</Text>
         </View>
 
         <TextInput placeholder='Search or input SKU' style={styles.input}>
@@ -74,6 +75,12 @@ const styles = StyleSheet.create({
     width: '15%',
     alignItems: 'center',
     top: Dimensions.get('window').height*.04,
+  },
+  greeting: {
+    alignSelf: 'center',
+    alignItems: 'center',
+    top: Dimensions.get('window').height*.04,
+    fontSize: 35
   },
   item: {
    padding: 10,
