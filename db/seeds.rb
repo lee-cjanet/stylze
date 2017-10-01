@@ -359,7 +359,7 @@ user1 = User.create!(
 
 user2 = User.create!(
   name: "Atom",
-  userId: "123",
+  userId: "100",
   email: "abc@abc.com",
   purchases: ['bottom8', 'bottom9', 'top13', 'top11', 'top8'],
   passcode: ""
@@ -367,7 +367,7 @@ user2 = User.create!(
 
 user3 = User.create!(
   name: "Jared",
-  userId: "123",
+  userId: "124",
   email: "jared@tan.com",
   purchases: ['bottom10', 'bottom11', 'bottom12', 'bottom13', 'top21', 'top20'],
   passcode: ""
@@ -375,7 +375,7 @@ user3 = User.create!(
 
 user4 = User.create!(
   name: "Keith",
-  userId: "123",
+  userId: "125",
   email: "keith@wong.com",
   purchases: ['bottom13', 'bottom11', 'bottom10', 'top16', 'top15', 'top17'],
   passcode: ""
@@ -383,7 +383,7 @@ user4 = User.create!(
 
 user5 = User.create!(
   name: "Janet",
-  userId: "123",
+  userId: "126",
   email: "janet@lee.com",
   purchases: ['bottom7', 'bottom6', 'bottom5', 'bottom4', 'top1'],
   passcode: ""

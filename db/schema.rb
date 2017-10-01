@@ -21,8 +21,8 @@ ActiveRecord::Schema.define(version: 20171001000100) do
     t.string "sku", null: false
     t.string "gender"
     t.string "tags", default: [], array: true
-    t.string "recommendations", default: [], array: true
     t.string "image"
+    t.string "recommendations", default: [], array: true
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
@@ -33,8 +33,8 @@ ActiveRecord::Schema.define(version: 20171001000100) do
     t.string "sku", null: false
     t.string "gender"
     t.string "tags", default: [], array: true
-    t.string "recommendations", default: [], array: true
     t.string "image"
+    t.string "recommendations", default: [], array: true
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
