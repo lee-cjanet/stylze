@@ -12,26 +12,25 @@ import {
   FlatList
 } from 'react-native';
 import Dimensions from 'Dimensions';
-import UserPage from '../users/user_page';
+import UserPageContainer from '../users/user_page_container';
 
 class Main extends React.Component {
   constructor(props) {
     super(props);
 
     this.navigateToUser = this.navigateToUser.bind(this);
-
   }
 
   componentDidMount() {
     // this.props.dispatch(getUsers(this.props.users));
-
   }
 
   navigateToUser(user) {
-    // this.props.dispatch(receiveCurrentUser(user));
+    // console.log(this.props);
+    this.props.receiveUser(user);
 
     this.props.navigator.push({
-        component: UserPage,
+        component: UserPageContainer,
         title: 'User Page',
         navigationBarHidden: true
       });
