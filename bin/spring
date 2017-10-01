@@ -14,4 +14,9 @@ unless defined?(Spring)
     gem 'spring', spring.version
     require 'spring/binstub'
   end
+
+  # begin
+  #   load File.expand_path('../spring', __FILE__)
+  #   rescue LoadError
+  # end
 end
