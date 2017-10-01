@@ -71,10 +71,13 @@ class Main extends React.Component {
       <View style={styles.container}>
         <View style={styles.topBar}>
           <Text style={styles.title}>
-            Select fruit given!
+            Welcome to Brand.
+          </Text>
+          <Text style={styles.title}>
+            Select fruit given to you from signing into Wi-Fi.
           </Text>
           <TouchableOpacity onPress={() => this.scanQr()}>
-            <Text style={styles.qr}>or Scan QR Code.</Text>
+            <Text style={styles.qr}>or Scan QR Code!</Text>
           </TouchableOpacity>
         </View>
 
@@ -85,10 +88,8 @@ class Main extends React.Component {
               data={[
                 {key: 'Blue Strawberry'},
                 {key: 'Yellow Apple'},
-                {key: 'Brown Kiwi'},
                 {key: 'Pink Greggles'},
                 {key: 'Red Starfruit'},
-                {key: 'Orange Orange'},
                 {key: 'Green Watermelon'},
                 {key: 'White Dragonfruit'},
               ]}
@@ -123,7 +124,7 @@ const styles = StyleSheet.create({
     width: '100%'
   },
   list: {
-    top: Dimensions.get('window').height*.2
+    top: Dimensions.get('window').height*.3
   },
   item: {
     fontSize: 20,
@@ -135,7 +136,7 @@ const styles = StyleSheet.create({
     borderRadius: 10,
   },
   qr: {
-    top: Dimensions.get('window').height*.09,
+    top: Dimensions.get('window').height*.12,
     color: 'blue',
     fontSize: 28,
     alignSelf: 'center',
