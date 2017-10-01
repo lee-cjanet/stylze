@@ -7,6 +7,7 @@ class CreateTops < ActiveRecord::Migration[5.1]
       t.string :gender
       t.string :tags, array: true, default: []
       t.string :recommendations, array: true, default: []
+      t.string :image
 
       t.timestamps
     end
